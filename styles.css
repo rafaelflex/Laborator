@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url('https://automotorsisport.ro/wp-content/uploads/2020/10/urusweb8-1120x630.jpg'); /* Imaginea de fundal */
+    background-size: cover; /* Acoperă întregul fundal */
+    background-position: center; /* Centrează imaginea */
+    background-attachment: fixed; /* Fixa imaginea pe fundal */
+    color: white; /* Setează toate literele pe alb */
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent pentru header */
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  header img {
+    width: 150px; /* Mărimea logo-ului */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav a {
+    color: white;
+    float: left;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: #66c2a5;
+    color: white;
+  }
+  
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
