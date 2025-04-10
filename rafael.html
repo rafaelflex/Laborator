@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickRide - Rafael</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://www.brandcrowd.com/maker/social/brr1czgjmp" alt="QuickRide Logo">
+    <h1>QuickRide</h1>
+    <p>Oferim servicii de ride-sharing rapide și sigure.</p>
+  </header>
+
+  <!-- Meniu de navigare -->
+  <nav>
+    <ul>
+      <li>
+        <a href="#" onclick="toggleSubmenu()">Acasă</a>
+        <ul id="homeSubmenu" class="submenu">
+          <li><a href="#" onclick="showText('history')">Istoric</a></li>
+          <li><a href="#" onclick="showText('services')">Servicii</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="showText('about')">Despre Noi</a></li>
+      <li><a href="#" onclick="showText('contact')">Contact</a></li>
+      <li><a href="#" onclick="showText('book')">Rezervă o Cursă</a></li>
+    </ul>
+  </nav>
+
+  <!-- Formular de logare -->
+  <div id="loginForm" class="form-container">
+    <h2>Logare</h2>
+    <form id="login" onsubmit="login(event)">
+      <label for="username">Nume Utilizator:</label>
+      <input type="text" id="username" required><br>
+      <label for="password">Parolă:</label>
+      <input type="password" id="password" required><br>
+      <button type="submit">Loghează-te</button>
+    </form>
+  </div>
+
+  <!-- Conținutul paginii -->
+  <div class="container" id="response">
+    <h2>Bine ai venit pe pagina noastră!</h2>
+    <p>Te rugăm să te loghezi pentru a rezerva o cursă.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 QuickRide. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="rafael.js"></script>
+</body>
+</html>
+<body>
+
+  <!-- Iconiță de logare în colțul dreapta sus -->
+  <div id="loginIcon" onclick="toggleLoginForm()">🔑</div>
+
+  <!-- Formularul de logare -->
+  <div id="loginForm" class="form-container">
+    <h2>Logare</h2>
+    <form id="login" onsubmit="login(event)">
+      <label for="username">Nume Utilizator:</label>
+      <input type="text" id="username" required><br>
+      <label for="password">Parolă:</label>
+      <input type="password" id="password" required><br>
+      <button type="submit">Loghează-te</button>
+    </form>
+  </div>
+
+  <!-- Restul conținutului paginii -->
+  <div class="container" id="response">
+    <h2>Bine ai venit pe pagina noastră!</h2>
+    <p>Te rugăm să te loghezi pentru a rezerva o cursă.</p>
+  </div>
+
+  <!-- Restul elementelor (header, footer, etc.) -->
+  <footer>
+    <p>&copy; 2025 QuickRide. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="rafael.js"></script>
+</body>
+<body>
+
+  <!-- Iconiță de logare în colțul dreapta sus -->
+  <div id="loginIcon" onclick="toggleLoginForm()">🔑</div>
+  <!-- Iconiță de înregistrare -->
+  <div id="registerIcon" onclick="toggleRegisterForm()">📝</div>
+
+  <!-- Formularul de logare -->
+  <div id="loginForm" class="form-container">
+    <h2>Logare</h2>
+    <form id="login" onsubmit="login(event)">
+      <label for="username">Nume Utilizator:</label>
+      <input type="text" id="username" required><br>
+      <label for="password">Parolă:</label>
+      <input type="password" id="password" required><br>
+      <button type="submit">Loghează-te</button>
+    </form>
+  </div>
+
+  <!-- Formularul de înregistrare -->
+  <div id="registerForm" class="form-container">
+    <h2>Înregistrare</h2>
+    <form id="register" onsubmit="register(event)">
+      <label for="newUsername">Nume Utilizator:</label>
+      <input type="text" id="newUsername" required><br>
+      <label for="newPassword">Parolă:</label>
+      <input type="password" id="newPassword" required><br>
+      <label for="role">Alege rolul:</label>
+      <select id="role" required>
+        <option value="client">Client</option>
+        <option value="owner">Proprietar Mașină</option>
+      </select><br>
+      <button type="submit">Înregistrează-te</button>
+    </form>
+  </div>
+
+  <!-- Restul conținutului paginii -->
+  <div class="container" id="response">
+    <h2>Bine ai venit pe pagina noastră!</h2>
+    <p>Te rugăm să te loghezi pentru a rezerva o cursă.</p>
+  </div>
+
+  <!-- Restul elementelor (header, footer, etc.) -->
+  <footer>
+    <p>&copy; 2025 QuickRide. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="rafael.js"></script>
+</body>
+<!-- Iconița de logare cu textul "Conectare" -->
+<span id="loginIcon" onclick="toggleLoginForm()" style="cursor: pointer;">
+  🔑 Conectare
+</span>
+<!-- Iconița și textul pentru logare -->
+<span id="loginIcon" onclick="toggleLoginForm()" style="cursor: pointer;">
+  🔑 Conectare
+</span>
+
+<!-- Formularele de Logare și Înregistrare -->
+<div id="authFormContainer" class="form-container">
+  <!-- Formularul de logare -->
+  <div id="loginForm" style="display: block;">
+    <h2>Logare</h2>
+    <form id="login" onsubmit="login(event)">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" required><br>
+      <label for="loginPassword">Parolă:</label>
+      <input type="password" id="loginPassword" required><br>
+      <button type="submit">Loghează-te</button>
+    </form>
+    <p>Nu ai cont? <a href="#" onclick="toggleForm('register')">Înregistrează-te</a></p>
+  </div>
+
+  <!-- Formularul de înregistrare -->
+  <div id="registerForm" style="display: none;">
+    <h2>Înregistrare</h2>
+    <form id="register" onsubmit="register(event)">
+      <label for="registerEmail">Email:</label>
+      <input type="email" id="registerEmail" required><br>
+      <label for="registerPassword">Parolă:</label>
+      <input type="password" id="registerPassword" required><br>
+      <label for="accountType">Tip Cont:</label><br>
+      <input type="radio" id="client" name="accountType" value="client" checked> Client
+      <input type="radio" id="seller" name="accountType" value="seller"> Vânzător<br>
+      <button type="submit">Înregistrează-te</button>
+    </form>
+    <p>Ai deja cont? <a href="#" onclick="toggleForm('login')">Loghează-te</a></p>
+  </div>
+</div>
+<!-- Conținutul paginii -->
+<div class="container" id="response">
+  <div id="authFormContainer" style="display: block;">
+    <h2>Logare sau Înregistrare</h2>
+    <button id="loginBtn" onclick="toggleAuthForm()">Conectare</button>
+    <button id="registerBtn" onclick="toggleAuthForm()">Înregistrare</button>
+  </div>
+</div>

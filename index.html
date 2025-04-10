@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickRide - Ride Sharing Service</title>
+  <style>
+    /* Stiluri generale */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Header cu animație și logo */
+    header {
+      background-color: #3f9e66; /* Verde similar cu cel din logo */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-out; /* Animație de apariție a header-ului */
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+      animation: scaleIn 1s ease-out; /* Animație de scalare pentru logo */
+    }
+
+    /* Animație pentru logo */
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    /* Meniu de navigare */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Linkuri în meniu */
+    nav a {
+      color: white;
+      float: left;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s; /* Adăugăm tranziție la hover */
+    }
+
+    /* Hover pentru linkuri */
+    nav a:hover {
+      background-color: #66c2a5; /* Albastru-verde asemănător logo-ului */
+      color: white;
+    }
+
+    /* Containerul principal pentru conținut */
+    .container {
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Animație pentru header */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://dynamic.brandcrowd.com/preview/logodraft/9638a86d-b3d9-42c5-94c8-be767ebed2e9/image/large.png" alt="QuickRide Logo">
+    <h1>Welcome to QuickRide</h1>
+    <p>Your reliable ride-sharing partner</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="simulateRequest('/home')">Home</a>
+    <a href="#" onclick="simulateRequest('/about')">About Us</a>
+    <a href="#" onclick="simulateRequest('/contact')">Contact</a>
+    <a href="#" onclick="simulateRequest('/book')">Book a Ride</a>
+  </nav>
+
+  <div class="container" id="response">
+    <h2>Welcome to QuickRide!</h2>
+    <p>Click on the links above to explore more.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 QuickRide. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simulăm Routing-ul
+    function route(path) {
+      const responseDiv = document.getElementById('response');
+
+      switch(path) {
+        case '/home':
+          responseDiv.innerHTML = '<h2>Home Page</h2><p>Welcome to QuickRide, your trusted partner for carpooling and ride-sharing.</p>';
+          break;
+        case '/about':
+          responseDiv.innerHTML = '<h2>About Us</h2><p>At QuickRide, we believe in a cleaner planet and efficient travel. Join our community of riders!</p>';
+          break;
+        case '/contact':
+          responseDiv.innerHTML = '<h2>Contact Us</h2><p>Have any questions? Reach out to us at support@quickride.com</p>';
+          break;
+        case '/book':
+          responseDiv.innerHTML = '<h2>Book a Ride</h2><p>Select your ride and make a reservation. It\'s easy, fast, and affordable!</p>';
+          break;
+        default:
+          notFound();
+          break;
+      }
+    }
+
+    // Functie pentru a simula un 404 Not Found
+    function notFound() {
+      const responseDiv = document.getElementById('response');
+      responseDiv.innerHTML = '<h2>404 Not Found</h2><p>The page you requested does not exist.</p>';
+    }
+
+    // Functie pentru simularea unei cereri
+    function simulateRequest(path) {
+      route(path);
+    }
+
+  </script>
+
+</body>
+</html>

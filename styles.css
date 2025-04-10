@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(darkgreen 30%, transparent 30%), 
+              url('https://automotorsisport.ro/wp-content/uploads/2020/10/urusweb8-1120x630.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #66c2a5;
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+.submenu li {
+  padding: 5px;
+}
+
+.container {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.form-container {
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #66c2a5;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #55a29b;
+}
+
+/* Stil pentru lista de mașini */
+ul#carList li a {
+  color: white;           /* Culoare albă pentru text */
+  font-size: 1.5em;       /* Mărirea textului */
+  text-decoration: none;  /* Fără subliniere */
+  padding: 10px;          /* Puțină marjă pentru un aspect mai plăcut */
+}
+
+ul#carList li a:hover {
+  background-color: #66c2a5;  /* Schimbă culoarea fundalului la hover */
+  color: white;               /* Asigură că textul rămâne alb și la hover */
+}
+/* Iconiță pentru logare în colțul dreapta sus */
+#loginIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+#loginIcon.hidden {
+  display: none;
+}
+
+/* Stil pentru a face formularul de logare să apară în centru */
+#loginForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+}
+/* Formularul de înregistrare care este ascuns inițial */
+#registerForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none; /* Ascuns până la apăsarea iconiței */
+  text-align: center;
+}
+#loginIcon {
+  color: white;
+  font-size: 1.2em;  /* Mărirea fontului */
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;  /* Alinierea verticală a iconiței și textului */
+  cursor: pointer;
+}
+
+#loginIcon:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Culoare de fundal la hover */
+  border-radius: 5px;
+}
+#authFormContainer {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #66c2a5;
+  border: none;
+  color: white;
+}
+
+form button:hover {
+  background-color: #55a29b;
+}
+
+/* Stil pentru a face formularele să arate bine */
+#loginForm, #registerForm {
+  margin: 0 auto;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+#registerForm input[type="radio"] {
+  margin-right: 10px;
+}
+/* Formular de autentificare */
+#loginForm {
+  display: block;
+}
+
+/* Formular de înregistrare */
+#registerForm {
+  display: none;
+}
