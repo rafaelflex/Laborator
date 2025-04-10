@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -218,4 +219,71 @@ form button:hover {
 /* Formular de înregistrare */
 #registerForm {
   display: none;
+=======
+/* Stiluri generale */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Containerul principal */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titlu */
+.titlu {
+  font-size: 2.5em;
+  color: #3498db;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtitlu */
+.subtitlu {
+  font-size: 1.5em;
+  color: #2ecc71;
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Animație pentru mașină */
+.animatie {
+  display: inline-block;
+  animation: miscare 5s linear infinite;
+}
+
+/* Animarea imaginii mașinii */
+.car-img {
+  width: 150px;
+  height: auto;
+}
+
+/* Definirea animației pentru mișcare */
+@keyframes miscare {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(300px); /* Deplasare la dreapta */
+  }
+  100% {
+      transform: translateX(0); /* Întoarcere la poziția inițială */
+  }
+}
+
+/* Animație pentru text (fade-in) */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+>>>>>>> 74e6dfc7164d3df6b17d077988069c32071c1b27
 }
