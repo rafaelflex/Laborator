@@ -1,58 +1,18 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuickRide - Rafael</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Legătura către fișierul CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRide - Animație</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header cu logo static -->
-  <header>
-    <img src="https://www.brandcrowd.com/maker/social/brr1czgjmp" alt="QuickRide Logo">
-    <h1>Bine ai venit, Rafael!</h1>
-    <p>Oferim servicii de ride-sharing rapide și sigure.</p>
-  </header>
-
-  <!-- Meniul de navigare -->
-  <nav>
-    <a href="#" onclick="simulateRequest('/home')">Acasă</a>
-    <a href="#" onclick="simulateRequest('/about')">Despre Noi</a>
-    <a href="#" onclick="simulateRequest('/contact')">Contact</a>
-    <a href="#" onclick="simulateRequest('/book')">Rezervă o cursă</a>
-  </nav>
-
-  <!-- Conținutul principal -->
-  <div class="container" id="response">
-    <h2>Bine ai venit pe pagina noastră, Rafael!</h2>
-    <p>Click pe linkurile de mai sus pentru a explora mai multe.</p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 QuickRide. Toate drepturile rezervate.</p>
-  </footer>
-
-  <script>
-    // Simulăm Routing-ul
-    function route(path) {
-      const responseDiv = document.getElementById('response');
-
-      switch(path) {
-        case '/home':
-          responseDiv.innerHTML = '<h2>Acasă</h2><p>Bine ai venit la QuickRide, partenerul tău de încredere pentru ride-sharing.</p>';
-          break;
-        case '/about':
-          responseDiv.innerHTML = '<h2>Despre Noi</h2><p>La QuickRide, credem într-o planetă mai curată și călătorii eficiente. Alătură-te comunității noastre de călători!</p>';
-          break;
-        case '/contact':
-          responseDiv.innerHTML = '<h2>Contact</h2><p>Ai întrebări? Contactează-ne la support@quickride.com</p>';
-          break;
-        case '/book':
-          responseDiv.innerHTML
-
-
-
-
-
+    <div class="container">
+        <h1 class="titlu">QuickRide</h1>
+        <p class="subtitlu">Închiriază rapid o mașină!</p>
+        <div class="animatie">
+            <img src="car-icon.png" alt="Mașină" class="car-img">
+        </div>
+    </div>
+</body>
+</html>
